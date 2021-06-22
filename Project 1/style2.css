@@ -1,0 +1,266 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 10px 10px;
+     
+}
+
+#logo img{
+    height: 100px ;
+    width: 100px;
+    margin: 5px 5px;
+}
+
+/*Navigation Bar: List Styling*/
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*party section*/
+#party{
+   display: flex; 
+   flex-direction: column;
+   padding: 5px 200px;
+   height: 600px;
+   justify-content: center;
+   align-items: center;
+}
+
+#party::before{ 
+    content: "";
+    position: absolute;
+    background: url('https://mommyp-prod.s3.amazonaws.com/isc_skatingunderthestars_04nov2017_ling_ale_9178.jpg') no-repeat center center/cover;
+    height: 800px;
+    margin-top: 130px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#party h1{
+    color:black;
+    font-size: 4.5rem;
+    margin-top: 1100px;
+    background-color: rgba(100, 148, 237, 0.514);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+#party p{
+   color: black;
+   text-align: center;
+   font-size: 1.5rem;
+   font-family: serif;
+}
+
+/*shows section*/
+ 
+ #shows h1{
+     color:white;
+     text-align: center;
+     font-size: 4.5rem;
+     margin-top: 460px;
+     margin-bottom: 200px;
+     width: 86.5%;
+     padding: 0px 100px;
+     background-color: rgba(0, 0, 0, 0.699);
+     font-family: 'Caveat', cursive;
+ }
+ 
+ #shows p{
+     color: white;
+     text-align: center;
+     background-color: rgba(0, 0, 0, 0.514);
+     font-size: 2.5rem;
+     font-family: serif;
+     margin-bottom: 0px;
+ }
+
+.show{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.so1{
+    background: url('https://image.tmdb.org/t/p/w780/s2zNgRodZaC9XX4ylS30CbBJu0r.jpg') no-repeat center center/cover;
+}
+
+.so2{
+    background: url('https://www.formulatv.com/images/series/2000/2240-f.jpg') no-repeat center center/cover;
+    height: 800px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.so3{
+    background: url('https://productplacementblog.com/wp-content/uploads/2020/01/Patagonia-Blue-Fleece-Jacket-Worn-by-Evan-Roderick-as-Justin-Davis-in-Spinning-Out-Season-1-Episode-3-Proceed-with-Caution-3.jpg') no-repeat center center/cover;
+    height: 800px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    margin-bottom: 100px;
+}
+
+/*Live shows section*/
+#live{
+    display: flex; 
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 500px;
+    background: url('https://www.gannett-cdn.com/-mm-/ab441900edd7ae4cefb24d5e975d73663547fdb2/c=0-266-4285-2687&r=x1683&c=3200x1680/local/-/media/2017/09/01/USATODAY/USATODAY/636398647612196911-C01-GRACIE-10-61774832.JPG') no-repeat center center/cover;
+ }
+ 
+ #live h1{
+     color:black;
+     margin-top: 1000px;
+     text-align: center;
+     font-family: 'Caveat', cursive;
+ }
+ 
+ #live p{
+     color: black;
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: 'Teko', sans-serif;
+}
+
+#live img{
+    margin-bottom:300px;
+}
+
+/* Contact Section */
+#contact{
+    margin: 100px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+    background: url('https://thesmartlocal.com/images/easyblog_articles/5857/Cool-celebrations-on-ice--The-Rink-2---Skating-with-family-friends-and-snowmen.jpg') no-repeat center center/cover;
+
+}
+
+#contact p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Teko', sans-serif;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/*Utility Classes*/
+.h-primary{
+    font-size: 5.5rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.h-contact{
+    background-color: rgba(175, 238, 238, 0.486);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+}

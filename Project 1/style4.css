@@ -1,0 +1,245 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 10px 10px;
+     
+}
+
+#logo img{
+    height: 100px ;
+    width: 100px;
+    margin: 5px 5px;
+}
+
+/*Navigation Bar: List Styling*/
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*Cafe cover section*/
+#cafe{
+    display: flex; 
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #cafe::before{ 
+     content: "";
+     position: absolute;
+     margin-top: 100px;
+     background: url('https://www.azamaraclubcruises.com/sites/default/files/heros/med-food-hero.jpg') no-repeat center center/cover;
+     height: 750px;
+     top:0px;
+     left:0px;
+     width: 100%;
+     z-index: -1;
+     opacity:0.89;
+ }
+ 
+ #cafe h1{
+     color:black;
+     margin-top: 350px;
+     text-align: center;
+     font-family: 'Courgette', cursive;
+ }
+ 
+ #cafe h2{
+    color:black;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+ }
+ #cafe p{
+     color: black;
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: serif;
+ }
+
+/*cafe2 section*/
+#cafe2{
+    margin-top: 234px;
+    display: flex;
+}
+
+#cafe2 h1{
+    text-align: center;
+    color: black;
+    background-color:rgba(238, 130, 238, 0.651)
+}
+
+#cafe2 .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#cafe2 .box img{ 
+   height: 50%;
+   width: 50%;
+   margin: auto;
+   display: block;
+}
+
+#cafe2s .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+.b3{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+/*cafe3 section*/
+#cafe3{
+    text-align: center;
+}
+
+#cafe3 h1{
+    color: black;
+    font-family: 'Bree Serif', serif;
+    background-color: rgba(250, 128, 114, 0.582);
+    font-size: 5.5rem;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+/*cafe4 section*/
+#cafe4 h1{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: black;
+    background-color: cornflowerblue;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+/* Contact Section */
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://auspost.com.au/content/dam/corp/travel-essentials/destination-guides/italy/photo-antipasto-platter-italian-food.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.5rem;
+   font-family: serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+ /* Utility Classes */
+.h-primary{
+    font-size: 5.5rem;
+    padding: 12px;
+}
+
+.h-contact{
+    margin-bottom: 90px;
+    background-color:rgb(194, 101, 240);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+}
